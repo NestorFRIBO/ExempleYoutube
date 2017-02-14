@@ -10,7 +10,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.nfb.exempleyoutube.Filtro"
-    android:background="@drawable/fondo3">
+    android:background="@drawable/fondo31">
 
     <TextView
         android:text="Valencia"
@@ -24,80 +24,99 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true" />
 
-    <view
-        android:layout_width="match_parent"
-        android:background="@android:color/background_light"
-        android:layout_height="5dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="150dp" />
-
-    <view
-        android:layout_width="320dp"
-        android:background="@android:color/black"
-        android:layout_height="3dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="160dp"
-        android:layout_alignParentLeft="false"
-        android:gravity="right" />
-
     <LinearLayout
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
         android:layout_below="@+id/textView2"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="81dp"
-        android:layout_alignParentBottom="true">
+        android:layout_alignParentStart="true">
 
         <LinearLayout
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
+            android:layout_height="80dp">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/museos"
-                android:id="@+id/btnMuseos" />
+                app:srcCompat="@drawable/alojamiento_es"
+                android:id="@+id/ESalojamiento"
+                android:layout_weight="1" />
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/compras"
-                android:id="@+id/btnCompras" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/comer"
-                android:id="@+id/btnGastronomia" />
+                app:srcCompat="@drawable/comida_es"
+                android:id="@+id/EScomida"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp" />
         </LinearLayout>
 
         <LinearLayout
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
+            android:layout_height="80dp">
 
             <ImageView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/alojami"
-                android:id="@+id/btnHotel"
-                android:layout_marginTop="1dp" />
+                app:srcCompat="@drawable/dinero_es"
+                android:id="@+id/ESdinero"
+                android:layout_weight="1" />
+
             <ImageView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/ocio"
-                android:id="@+id/btnOcio" />
+                app:srcCompat="@drawable/emergencias_es"
+                android:id="@+id/ESemergencia"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
             <ImageView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/eventos"
-                android:id="@+id/btnEvent" />
+                app:srcCompat="@drawable/fallas_es"
+                android:id="@+id/ESfallas"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/monumentos_es"
+                android:id="@+id/ESmonumentos"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ocio_es"
+                android:id="@+id/ESocio"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/transporte_es"
+                android:id="@+id/EStransporte"
+                android:layout_weight="1"
+                android:paddingTop="5dp" />
         </LinearLayout>
     </LinearLayout>
+
 </RelativeLayout>
